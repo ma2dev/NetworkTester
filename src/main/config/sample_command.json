@@ -1,0 +1,35 @@
+{
+	"input":
+	[
+		{
+			"command": "ls -l",
+			"timeout": 5,
+			"success":
+			[
+				{
+					"message": "success!!"
+				},
+
+				{
+					"message": "OK"
+				}
+			],
+
+			"error":
+			[
+				{
+					"message": "xxx1"
+				},
+
+				{
+					"message": "yyy2"
+				}
+			],
+
+			"subprompt": "~]\\$ $"
+		}
+	],
+
+	"prompt": "~]\\$ $",
+	"encode": "UTF-8"
+}

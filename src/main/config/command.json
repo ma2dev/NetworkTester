@@ -1,0 +1,85 @@
+{
+	"input":
+	[
+		{
+			"command": "ssh ${USERNAME}@${HOSTNAME}",
+			"timeout": 10,
+			"success": null,
+			"error": null,
+			"subprompt": "password:"
+		},
+
+		{
+			"command": "${PASSWORD}",
+			"timeout": 10,
+			"success": null,
+			"error":
+			[
+				{
+					"message": "Permission denied"
+				}
+			],
+
+			"subprompt": "~]\\$ $"
+		},
+
+		{
+			"command": "ps -ef",
+			"timeout": 10,
+			"success":
+			[
+				{
+					"message": "success!!"
+				},
+
+				{
+					"message": "OK"
+				}
+			],
+
+			"error":
+			[
+				{
+					"message": "xxx"
+				},
+
+				{
+					"message": "yyy"
+				}
+			],
+
+			"subprompt": "~]\\$ $"
+		},
+
+		{
+			"command": "ls -l",
+			"timeout": 5,
+			"success":
+			[
+				{
+					"message": "success!!"
+				},
+
+				{
+					"message": "OK"
+				}
+			],
+
+			"error":
+			[
+				{
+					"message": "xxx1"
+				},
+
+				{
+					"message": "yyy2"
+				}
+			],
+
+			"subprompt": "~]\\$ $"
+		}
+	],
+
+	"prompt": "~]\\$ $",
+	"encode": "UTF-8"
+}
